@@ -1,4 +1,5 @@
 import pygame
+import sys
 import math
 from queue import PriorityQueue
 
@@ -219,6 +220,7 @@ def main(win, width):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
+                sys.exit()
 
             # Left mouse click
             if pygame.mouse.get_pressed()[0]:
